@@ -10,10 +10,7 @@ type: kubernetes
 name: release
 
 clone:
-  disable: true
-
-steps:
-  - <<: *clone
+  depth: 1
 
 trigger:
   branch:
